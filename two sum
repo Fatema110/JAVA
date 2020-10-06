@@ -14,13 +14,6 @@ Output: Because nums[0] + nums[1] == 9, we return [0, 1].
 //
 
 
-
-
-
-
-
-
-
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> num_map  = new HashMap<Integer, Integer>(); //Datastructure 
