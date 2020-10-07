@@ -1,0 +1,28 @@
+class Solution {
+    public boolean isPalindrome(int x) {
+        
+        if(x == 0){
+            return true;
+          }
+        
+        if (x < 0 || x % 10 == 0)
+            return false;
+            
+         // Reversing Number   
+        int reversed = 0;
+        int pop;
+        
+        while(x > reversed){
+            pop = x % 10;
+            x = x / 10;
+            
+        reversed = (reversed *10) + pop ;
+        } 
+        // For checking Palindrome (we are checking half of number ) 
+        if( x== reversed || x== reversed / 10 )  //x== reversed / 10 -> For Odd Number eg 12321 
+            return true;
+        else
+            return false;
+    }
+    
+}
